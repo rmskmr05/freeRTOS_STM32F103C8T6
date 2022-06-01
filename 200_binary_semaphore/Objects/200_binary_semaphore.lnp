@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\clib_arm.o"
+".\objects\cmsis_os2.o"
+".\objects\os_systick.o"
+".\objects\misc.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_usart.o"
+".\objects\gpio_stm32f10x.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\system_stm32f10x.o"
+".\objects\freertos_evr.o"
+".\objects\croutine.o"
+".\objects\event_groups.o"
+".\objects\list.o"
+".\objects\heap_4.o"
+".\objects\port.o"
+".\objects\queue.o"
+".\objects\tasks.o"
+".\objects\timers.o"
+--strict --scatter ".\Objects\200_binary_semaphore.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\200_binary_semaphore.map" -o .\Objects\200_binary_semaphore.axf
