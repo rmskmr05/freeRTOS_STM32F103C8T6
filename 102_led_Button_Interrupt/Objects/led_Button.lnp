@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\clib_arm.o"
+".\objects\cmsis_os1.o"
+".\objects\cmsis_os2.o"
+".\objects\os_systick.o"
+".\objects\misc.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_usart.o"
+".\objects\gpio_stm32f10x.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\system_stm32f10x.o"
+".\objects\stm32f10x_exti.o"
+".\objects\freertos_evr.o"
+".\objects\event_groups.o"
+".\objects\list.o"
+".\objects\heap_4.o"
+".\objects\port.o"
+".\objects\queue.o"
+".\objects\tasks.o"
+".\objects\timers.o"
+--strict --scatter ".\Objects\led_Button.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\led_Button.map" -o .\Objects\led_Button.axf
